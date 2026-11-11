@@ -9,7 +9,7 @@ the two proven models that require zero upfront investment.
 ├── about.html        ┐              AdSense-required pages
 ├── contact.html      ├  (Google's reviewers check for these — keep them!)
 ├── privacy-policy.html┘             Includes AdSense/affiliate/disclosure clauses
-├── posts/                           20 full SEO-ready articles (your starting content)
+├── posts/                           25 full SEO-ready articles (your starting content)
 ├── css/styles.css                   Whole design — edit variables to re-theme in minutes
 ├── js/main.js                       Dark mode, search, forms, cookie banner, share buttons
 ├── ads.txt                          Placeholder for AdSense's ads.txt line
@@ -47,7 +47,7 @@ python -m http.server 8000
 ## 3. The money roadmap (realistic, in order)
 
 ### Step 1 — Grow the content (weeks 1–6)
-AdSense rarely approves sites under ~20–30 quality posts. You start with **20 full articles**;
+AdSense rarely approves sites under ~20–30 quality posts. You start with **25 full articles**;
 write 2–3 more per week using `posts/start-blog-free.html` as your playbook (the "pillar + spoke"
 structure is explained there). Use the same file as a template — copy it, edit the content,
 update the JSON-LD schema and meta tags.
