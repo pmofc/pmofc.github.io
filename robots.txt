@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# Replace YOUR-DOMAIN.com with your real domain after deploying
-Sitemap: https://YOUR-DOMAIN.com/sitemap.xml
+# Replace pmofc.github.io with your real domain after deploying
+Sitemap: https://pmofc.github.io/sitemap.xml
