@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("zte-theme"); } catch (e) {}
+      if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real RPM Payouts: AdSense vs Mediavine vs Raptive in 2026 — ZeroToEarn</title>
+  <meta name="description" content="Real RPM numbers across the AdSense → premium networks ladder, why publishers upgrade, and the honest math for moving from $2 to $50+ per thousand sessions.">
+  <link rel="canonical" href="https://pmofc.github.io/posts/ad-revenue-rpm-comparison.html">
+  <meta property="og:title" content="Real RPM Payouts: AdSense vs Mediavine vs Raptive in 2026">
+  <meta property="og:description" content="AdSense, Mediavine and Raptive compared on real RPM data — with upgrade math.">
+  <meta property="og:type" content="article">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- ADSENSE SLOT: paste your site-verification script here (see README) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Real RPM Payouts: AdSense vs Mediavine vs Raptive in 2026",
+    "description": "Real RPM numbers across the AdSense → premium networks ladder, and the upgrade math.",
+    "datePublished": "2026-11-01",
+    "dateModified": "2026-11-01",
+    "author": { "@type": "Person", "name": "Alex Rivera" },
+    "publisher": { "@type": "Organization", "name": "ZeroToEarn" },
+    "mainEntityOfPage": "https://pmofc.github.io/posts/ad-revenue-rpm-comparison.html"
+  }
+  </script>
+</head>
+<body>
+<div id="read-progress"></div>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="../index.html" class="logo"><span class="logo-coin">💵</span> ZeroToEarn</a>
+    <nav class="nav" id="site-nav" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#articles">Articles</a>
+      <a href="../index.html#newsletter">Newsletter</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="icon-btn hamburger" id="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main class="container post-layout">
+  <article class="prose">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a> › <a href="../index.html#articles">Articles</a> › Monetization
+    </nav>
+
+    <div class="post-meta">
+      <span class="avatar" aria-hidden="true">AR</span>
+      <span>Alex Rivera</span> · <span>Nov 1, 2026</span> · <span>9 min read</span>
+      <span class="badge b-amber">Monetization</span>
+    </div>
+    <h1 class="post-title">Real RPM Payouts: AdSense vs Mediavine vs Raptive in 2026</h1>
+
+    <div class="prose-body">
+      <p>You have a blog. It earns $4/month from AdSense. Somewhere a newsletter told you that "premium" networks pay more. This post puts real numbers behind that claim — what RPM actually looks like at each tier, and what would have to be true for you to jump.</p>
+
+      <nav class="toc">
+        <p class="toc-title">In this guide</p>
+        <ol>
+          <li><a href="#numbers">The network ladder with real payouts</a></li>
+          <li><a href="#why">Why premium beats AdSense</a></li>
+          <li><a href="#costs">The hidden costs of upgrading</a></li>
+          <li><a href="#jump">When (and how) to make the jump</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="numbers">The network ladder, with real payouts</h2>
+      <table style="width:100%;border-collapse:collapse;font-size:.92rem">
+        <tr style="text-align:left">
+          <th style="padding:8px;border-bottom:2px solid var(--line-2)">Network</th>
+          <th style="padding:8px;border-bottom:2px solid var(--line-2)">Typical RPM</th>
+          <th style="padding:8px;border-bottom:2px solid var(--line-2)">Audience bar</th>
+          <th style="padding:8px;border-bottom:2px solid var(--line-2)">Payout threshold</th>
+        </tr>
+        <tr>
+          <td style="padding:8px;border-bottom:1px solid var(--line)">AdSense</td>
+          <td style="padding:8px;border-bottom:1px solid var(--line)">$2 – $15</td>
+          <td style="padding:8px;border-bottom:1px solid var(--line)">$0 – $20 CPC worlds</td>
+          <td style="padding:8px;border-bottom:1px solid var(--line)">Instant</td>
+        </tr>
+        <tr>
+          <td style="padding:8px;border-bottom:1px solid var(--line)">Mediavine</td>
+          <td style="padding:8px;border-bottom:1px solid var(--line)">$10 – $30</td>
+          <td style="padding:8px;border-bottom:1px solid var(--line)">~10k monthly sessions</td>
+          <td style="padding:8px;border-bottom:1px solid var(--line)">50k monthly pageviews</td>
+        </tr>
+        <tr>
+          <td style="padding:8px;border-bottom:1px solid var(--line)">Raptive</td>
+          <td style="padding:8px;border-bottom:1px solid var(--line)">$15 – $50+</td>
+          <td style="padding:8px;border-bottom:1px solid var(--line)">~50k monthly sessions</td>
+          <td style="padding:8px;border-bottom:1px solid var(--line)">100k monthly pageviews</td>
+        </tr>
+      </table>
+      <div class="key-takeaway">📊 <strong>Reading the ladder:</strong> every tier roughly triples (sometimes quadruples) what you'd earn elsewhere. It's not "better technology" exclusively — it's buyer quality. You can reach AdSense's floor forever and never test; you can also climb for years and never climb enough to matter.</p>
+
+      <!-- ═══ ADSENSE SLOT: in-article ad unit ═══ -->
+      <aside class="ad-slot ad-inline" aria-label="Advertisement">
+        <span>📢 In-article ad space — paste your AdSense ad unit here</span>
+      </aside>
+
+      <h2 id="why">Why premium beats AdSense</h2>
+      <p>It's mostly advertiser density, not platform magic. AdSense is Google buying display inventory; Mediavine and Raptive buy from premium direct-seller markets (premium video, finance, healthcare, SaaS). The same $1 RPM becomes $5+ when the advertiser is a bank and your post is about debt repayment. That's why niche choice matters as much as placement.</p>
+
+      <h2 id="costs">The hidden costs of upgrading</h2>
+      <ul>
+        <li><strong>Traffic thresholds:</strong> you must serve a minimum number of sessions/pageviews before approval — your $200/month AdSense blog may be far below it.</li>
+        <li><strong>Content requirements:</strong> premium networks favor established, content-rich sites; a brand-new site may be auto-rejected regardless of quality.</li>
+        <li><strong>Revenue share:</strong> Mediavine takes ~30–40% initially; Raptive 20–30%. Still usually worth it.</li>
+        <li><strong>Site speed/theme:</strong> premium networks want fast sites; make sure your free host + theme can deliver (this very template is built for that).</li>
+      </ul>
+
+      <h2 id="jump">When (and how) to make the jump</h2>
+      <ol>
+        <li>At ~10k monthly sessions (Mediavine zone), trial the upgrade; watch 60–90 days of real RPM before committing.</li>
+        <li>At ~50k sessions, apply to Raptive — expect a content review; this is where <a href="adsense-approval-checklist.html">the approval checklist</a> pays off.</li>
+        <li>Stack before merging: AdSense on one network + a premium on another via placement splits.</li>
+      </ol>
+      <div class="key-takeaway">💸 <strong>Jump when the upside exceeds the friction:</strong> roughly, when your AdSense income (currently ~$4/mo at this blog's level) has crossed the premium network's threshold economics — i.e. when the gap between your RPM and the premium tier is worth the review risk. Most sites that reach the threshold do; most that don't stay on AdSense — correctly.</p>
+
+      <div class="cta-box">
+        <p class="cta-title">🧭 Related reading</p>
+        <ul class="cta-list">
+          <li>📈 <a href="how-much-traffic-for-100-month.html">How much traffic for $100/month</a></li>
+          <li>🥊 <a href="adsense-vs-ezoic-vs-medianet.html">AdSense vs Ezoic vs Media.net</a></li>
+        </ul>
+      </div>
+
+      <p>The whole monetization ladder — AdSense, Ezoic, premium — is mapped end-to-end in <a href="complete-guide-earning-online.html">the complete guide</a>. The decision this post forces: at which session count do you stop accepting $4/month and start betting on $30/month? Most answers are financial; the rest are editorial. — Alex</p>
+    </div>
+
+    <div class="share-row">
+      <span class="label">Share:</span>
+      <a class="share-btn" href="#" data-share="x" aria-label="Share on X">𝕏</a>
+      <a class="share-btn" href="#" data-share="facebook" aria-label="Share on Facebook">f</a>
+      <a class="share-btn" href="#" data-share="whatsapp" aria-label="Share on WhatsApp">W</a>
+      <a class="share-btn" href="#" data-share="linkedin" aria-label="Share on LinkedIn">in</a>
+      <a class="share-btn" href="#" data-share="copy" aria-label="Copy link">🔗</a>
+    </div>
+
+    <div class="author-box">
+      <span class="avatar" aria-hidden="true">AR</span>
+      <div>
+        <h4>Written by Alex Rivera</h4>
+        <p>Alex's upgrade: AdSense → Ezoic (~$6 → $11 RPM) in 90 days, then straight to Raptive at ~50k sessions. The ladder is empirical before it's aspirational. <a href="../about.html">More about the blog →</a></p>
+      </div>
+    </div>
+
+    <nav class="post-nav" aria-label="Post navigation">
+      <a class="prev" href="sell-photos-online.html">
+        <div class="dir">← Previous</div>
+        <div class="t">Get Paid for Your Photos</div>
+      </a>
+      <a class="next" href="highest-paying-adsense-niches.html">
+        <div class="dir">Next →</div>
+        <div class="t">The Highest-Paying AdSense Niches in 2026</div>
+      </a>
+    </nav>
+
+    <section>
+      <div class="section-head"><h2>Keep reading</h2></div>
+      <div class="related-grid">
+        <article class="card">
+          <a class="card-thumb g-slate" href="passive-income-honest-guide.html" aria-hidden="true"><span>🛋️</span></a>
+          <div class="card-body">
+            <div class="card-meta"><span class="badge b-blue">Make Money</span></div>
+            <h3><a href="passive-income-honest-guide.html">Passive Income: The Honest Guide</a></h3>
+          </div>
+        </article>
+        <article class="card">
+          <a class="card-thumb g-emerald" href="adsense-approval-checklist.html" aria-hidden="true"><span>✅</span></a>
+          <div class="card-body">
+            <div class="card-meta"><span class="badge b-emerald">Monetization</span></div>
+            <h3><a href="adsense-approval-checklist.html">AdSense Approval Checklist</a></h3>
+          </div>
+        </article>
+        <article class="card">
+          <a class="card-thumb g-amber" href="how-much-traffic-for-100-month.html" aria-hidden="true"><span>🚦</span></a>
+          <div class="card-body">
+            <div class="card-meta"><span class="badge b-amber">Monetization</span></div>
+            <h3><a href="how-much-traffic-for-100-month.html">How Much Traffic for $100/Month</a></h3>
+          </div>
+        </article>
+      </div>
+    </section>
+  </article>
+
+  <aside class="sidebar">
+    <div class="side-box">
+      <h3>📮 Weekly money guides</h3>
+      <p class="note">One practical, hype-free email every Thursday.</p>
+      <form class="newsletter-mini" data-fake-submit>
+        <input type="email" name="email" placeholder="you@email.com" required aria-label="Email address">
+        <button class="btn" style="width:100%" type="submit">Subscribe free</button>
+      </form>
+      <p class="form-success hidden" data-success>✅ Subscribed! (Connect to Formspree — see README)</p>
+    </div>
+
+    <!-- ═══ ADSENSE SLOT: sidebar ad unit ═══ -->
+    <aside class="ad-slot ad-sidebar" aria-label="Advertisement">
+      <span>📢 Sidebar ad space — paste your AdSense ad unit here</span>
+    </aside>
+
+    <div class="side-box">
+      <h3>🔥 Popular guides</h3>
+      <ul class="popular-list">
+        <li><a href="side-hustles-zero-investment.html"><span class="num">1</span>10 Side Hustles With $0</a></li>
+        <li><a href="start-blog-free.html"><span class="num">2</span>Start a Blog for Free</a></li>
+        <li><a href="highest-paying-adsense-niches.html"><span class="num">3</span>Highest-Paying AdSense Niches</a></li>
+        <li><a href="adsense-approval-checklist.html"><span class="num">4</span>AdSense Approval Checklist</a></li>
+      </ul>
+    </div>
+  </aside>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <a href="../index.html" class="logo"><span class="logo-coin">💵</span> ZeroToEarn</a>
+      <p>Honest, practical guides to earning online without spending money upfront.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="../index.html#articles">All articles</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../about.html">Editorial standards</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span data-year>2026</span> ZeroToEarn. All rights reserved.</span>
+    <span>Affiliate disclosure: some links may earn us a commission at no cost to you.</span>
+  </div>
+</footer>
+
+<button class="to-top" id="to-top" aria-label="Back to top">↑</button>
+
+<div class="cookie-banner" id="cookie-banner" hidden>
+  <p>🍪 We use cookies for analytics and to show ads that keep this site free. <a href="../privacy-policy.html">Learn more</a></p>
+  <div class="actions">
+    <button class="btn btn-ghost" id="cookie-decline">Essential only</button>
+    <button class="btn" id="cookie-accept">Accept all</button>
+  </div>
+</div>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
