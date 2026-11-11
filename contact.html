@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("zte-theme"); } catch (e) {}
+      if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — ZeroToEarn</title>
+  <meta name="description" content="Get in touch with the ZeroToEarn team — questions, guide requests, corrections and advertising inquiries.">
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/contact.html">
+  <meta property="og:title" content="Contact ZeroToEarn">
+  <meta property="og:description" content="Questions, guide requests, corrections — send them over.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- ADSENSE SLOT: paste your site-verification script here (see README) -->
+</head>
+<body>
+<div id="read-progress" hidden></div>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="logo"><span class="logo-coin">💵</span> ZeroToEarn</a>
+    <nav class="nav" id="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#articles">Articles</a>
+      <a href="index.html#newsletter">Newsletter</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="icon-btn hamburger" id="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="container page-hero">
+    <p class="eyebrow">📬 Say hello</p>
+    <h1>Contact</h1>
+    <p class="lede">Questions about a guide, a method you'd like us to test, a correction, or a partnership — this form reaches us directly. We reply to almost everything within 2–3 business days.</p>
+  </section>
+
+  <section class="container prose-page">
+    <!-- Formspree (free tier) is the easiest way to make this form work.
+         1. Create a form at https://formspree.io → you get a URL like https://formspree.io/f/abcdwxyz
+         2. Replace the # below with that URL.
+         Until then the form shows a local success message for testing only. -->
+    <form class="contact-form" data-fake-submit action="#">
+      <div>
+        <label for="cf-name">Your name</label>
+        <input id="cf-name" type="text" name="name" required placeholder="Jane Doe">
+      </div>
+      <div>
+        <label for="cf-email">Email</label>
+        <input id="cf-email" type="email" name="email" required placeholder="you@email.com">
+      </div>
+      <div>
+        <label for="cf-topic">Topic</label>
+        <select id="cf-topic" name="topic">
+          <option>Question about a guide</option>
+          <option>Suggest a method to test</option>
+          <option>Correction / feedback</option>
+          <option>Partnership / advertising</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div>
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" required placeholder="How can we help?"></textarea>
+      </div>
+      <button class="btn" type="submit">Send message</button>
+    </form>
+    <p class="form-success hidden" data-success>✅ Thanks! Your message was received. (Connect this form to Formspree — see README.md)</p>
+
+    <div class="prose-body" style="margin-top:40px">
+      <h2>Other ways to reach us</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:hello@YOUR-DOMAIN.com">hello@YOUR-DOMAIN.com</a> <span class="muted">(replace with your address)</span></li>
+        <li><strong>Newsletter replies:</strong> subscribers can just hit reply on any Thursday email.</li>
+      </ul>
+      <p class="muted">We do not publish sponsored posts disguised as reviews, and we ignore pitches that ask us to. If you're a reader with an honest question, you're our favorite kind of email.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <a href="index.html" class="logo"><span class="logo-coin">💵</span> ZeroToEarn</a>
+      <p>Honest, practical guides to earning online without spending money upfront.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html#articles">All articles</a></li>
+        <li><a href="posts/side-hustles-zero-investment.html">Side hustles</a></li>
+        <li><a href="posts/adsense-approval-checklist.html">AdSense guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span data-year>2026</span> ZeroToEarn. All rights reserved.</span>
+    <span>Affiliate disclosure: some links may earn us a commission at no cost to you.</span>
+  </div>
+</footer>
+
+<button class="to-top" id="to-top" aria-label="Back to top">↑</button>
+
+<div class="cookie-banner" id="cookie-banner" hidden>
+  <p>🍪 We use cookies for analytics and to show ads that keep this site free. <a href="privacy-policy.html">Learn more</a></p>
+  <div class="actions">
+    <button class="btn btn-ghost" id="cookie-decline">Essential only</button>
+    <button class="btn" id="cookie-accept">Accept all</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

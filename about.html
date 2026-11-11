@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("zte-theme"); } catch (e) {}
+      if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — ZeroToEarn</title>
+  <meta name="description" content="Who runs ZeroToEarn and why: honest, tested, no-investment ways to earn money online. Our editorial standards.">
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/about.html">
+  <meta property="og:title" content="About ZeroToEarn">
+  <meta property="og:description" content="Honest, tested, no-investment ways to earn money online.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- ADSENSE SLOT: paste your site-verification script here (see README) -->
+</head>
+<body>
+<div id="read-progress" hidden></div>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="logo"><span class="logo-coin">💵</span> ZeroToEarn</a>
+    <nav class="nav" id="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#articles">Articles</a>
+      <a href="index.html#newsletter">Newsletter</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="icon-btn hamburger" id="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="container page-hero">
+    <p class="eyebrow">👋 Nice to meet you</p>
+    <h1>We test the $0 methods so you don't waste weekends on the fake ones.</h1>
+    <p class="lede">ZeroToEarn publishes honest guides to earning money online without spending money upfront — every method here can start at $0.</p>
+  </section>
+
+  <section class="container prose-page">
+    <div class="prose-body">
+      <h2>Why this blog exists</h2>
+      <p>The “make money online” internet is full of people selling you a ladder they never climbed themselves — courses about income they show no proof of. We got tired of it. ZeroToEarn does the boring, unglamorous thing: <strong>try methods, track the hours, publish the real numbers</strong> (including the embarrassing ones), and only recommend what holds up.</p>
+
+      <h2>What we cover</h2>
+      <ul>
+        <li><strong>Side hustles</strong> you can start with no capital</li>
+        <li><strong>Freelancing &amp; remote work</strong> that pays without upfront fees</li>
+        <li><strong>Blogging &amp; AdSense</strong> — including the exact approval process</li>
+        <li><strong>Free tools</strong> that replace paid software while you're starting</li>
+        <li><strong>Scam red flags</strong>, because knowing what to avoid saves real money</li>
+      </ul>
+
+      <h2>Editorial standards</h2>
+      <ol>
+        <li><strong>We only write what we've done or verified.</strong> Pay ranges come from platforms' published rates and real user reports, never from “income screenshots.”</li>
+        <li><strong>No pay-to-play.</strong> Nobody can buy a review or a spot in a list.</li>
+        <li><strong>Affiliate links are always disclosed</strong> and never change our verdicts — plenty of tools we recommend pay us nothing.</li>
+        <li><strong>We update old posts</strong> when platforms change their rates or rules.</li>
+      </ol>
+
+      <h2>About the author</h2>
+      <div class="author-box">
+        <span class="avatar" aria-hidden="true">AR</span>
+        <div>
+          <h4>Alex Rivera — Editor</h4>
+          <p>Alex started freelancing in 2021 with a laptop, a free Canva account and no savings. Since then: 30+ methods tested, one blog sold, dozens of scam pitches dodged. Everything on this site is filtered through that experience.</p>
+          <p><em>👉 Replace this bio with your own name, story and photo — see README.md → “Make it yours”.</em></p>
+        </div>
+      </div>
+
+      <h2>How this site is funded</h2>
+      <p>Three ways, all free for readers: <strong>display ads</strong> (Google AdSense), <strong>affiliate commissions</strong> when you choose to buy something we recommend (always at no extra cost to you, always disclosed), and nothing else. If a product isn't good, we say so — the long-term trust is worth more than a one-time commission.</p>
+
+      <p>Questions or a method you want us to test? <a href="contact.html">Send it over →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <a href="index.html" class="logo"><span class="logo-coin">💵</span> ZeroToEarn</a>
+      <p>Honest, practical guides to earning online without spending money upfront.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html#articles">All articles</a></li>
+        <li><a href="posts/side-hustles-zero-investment.html">Side hustles</a></li>
+        <li><a href="posts/adsense-approval-checklist.html">AdSense guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span data-year>2026</span> ZeroToEarn. All rights reserved.</span>
+    <span>Affiliate disclosure: some links may earn us a commission at no cost to you.</span>
+  </div>
+</footer>
+
+<button class="to-top" id="to-top" aria-label="Back to top">↑</button>
+
+<div class="cookie-banner" id="cookie-banner" hidden>
+  <p>🍪 We use cookies for analytics and to show ads that keep this site free. <a href="privacy-policy.html">Learn more</a></p>
+  <div class="actions">
+    <button class="btn btn-ghost" id="cookie-decline">Essential only</button>
+    <button class="btn" id="cookie-accept">Accept all</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

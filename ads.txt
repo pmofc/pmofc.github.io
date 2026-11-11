@@ -1,0 +1,9 @@
+# ads.txt — IAB Authorized Digital Sellers file (required by Google AdSense)
+#
+# AFTER AdSense approves your account:
+# 1. Go to AdSense → Sites → your site → "ads.txt"
+# 2. Copy the line Google gives you (it looks like the example below)
+# 3. Uncomment it and replace the placeholder pub ID with YOUR publisher ID
+#
+# Example format (replace pub-0000000000000000 with your own publisher ID):
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

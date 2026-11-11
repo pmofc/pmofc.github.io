@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Prevent dark-mode flash: runs before CSS paints -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("zte-theme"); } catch (e) {}
+      if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZeroToEarn — Realistic Ways to Earn Money Online With $0 to Start</title>
+  <meta name="description" content="Practical, hype-free guides on side hustles, freelancing, and monetizing a blog — all without spending money upfront. Updated for 2026.">
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/">
+  <meta property="og:title" content="ZeroToEarn — Earn Money Online With $0 to Start">
+  <meta property="og:description" content="Practical guides on side hustles, freelancing, and blog monetization. No investment required.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       ADSENSE SLOT: paste your AdSense site-verification script here
+       once your account is approved (README.md → "Add AdSense ads").
+       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+       ═══════════════════════════════════════════════════════════ -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ZeroToEarn",
+    "url": "https://YOUR-DOMAIN.com/",
+    "description": "Realistic ways to earn money online with zero upfront investment.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://YOUR-DOMAIN.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+<div id="read-progress" hidden></div>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="logo"><span class="logo-coin">💵</span> ZeroToEarn</a>
+    <nav class="nav" id="site-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="index.html#articles">Articles</a>
+      <a href="index.html#newsletter">Newsletter</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="icon-btn hamburger" id="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ── Hero ─────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">💡 The no-investment income blog</p>
+      <h1>Realistic ways to earn online — <span class="accent">starting at $0</span>.</h1>
+      <p class="lede">Practical guides on side hustles, freelancing, and monetizing a blog. No paid courses, no get-rich-quick schemes, no upfront costs — just honest strategies that work.</p>
+      <form class="search-box" onsubmit="return false" role="search">
+        <span class="icon">🔍</span>
+        <input id="search-input" type="search" placeholder="Search guides… try “side hustle” or “blog”" aria-label="Search guides">
+        <button class="btn" type="submit">Search</button>
+      </form>
+      <div class="hero-tags">
+        <span class="label">Popular:</span>
+        <a class="chip" href="#articles">Side hustles</a>
+        <a class="chip" href="#articles">Make money online</a>
+        <a class="chip" href="#articles">Blogging</a>
+        <a class="chip" href="#articles">AdSense</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Featured post ────────────────────────────────────── -->
+  <section class="container" id="featured">
+    <article class="featured">
+      <a class="card-thumb g-slate" href="posts/complete-guide-earning-online.html" aria-hidden="true"><span>🧭</span></a>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="badge b-blue">Start Here</span>
+          <span>Nov 11, 2026 · 18 min read</span>
+        </div>
+        <h2><a href="posts/complete-guide-earning-online.html">The Complete Guide to Earning Money Online in 2026</a></h2>
+        <p class="excerpt">Every realistic way to earn online, organized by how fast it pays — fast cash, freelancing and compounding assets, all startable with $0, plus your first 90-day plan. This is the hub the whole site hangs from.</p>
+        <a class="read-more" href="posts/complete-guide-earning-online.html">Read the full guide →</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- ── Articles ─────────────────────────────────────────── -->
+  <section class="container" id="articles">
+    <div class="section-head" style="margin-top:0">
+      <h2>Latest guides</h2>
+      <a href="index.html#newsletter">Get them by email ↓</a>
+    </div>
+
+    <div class="chips" role="group" aria-label="Filter by category">
+      <button class="chip active" data-cat="all">All</button>
+      <button class="chip" data-cat="side-hustles">Side Hustles</button>
+      <button class="chip" data-cat="make-money">Make Money Online</button>
+      <button class="chip" data-cat="blogging">Blogging</button>
+      <button class="chip" data-cat="monetization">Monetization</button>
+      <button class="chip" data-cat="tools">Tools &amp; Apps</button>
+    </div>
+    <p id="search-count" class="hidden" aria-live="polite"></p>
+
+    <div class="posts-grid">
+      <article class="card" data-category="make-money" data-title="complete guide earning money online 2026 every path zero dollars start here roadmap" data-tags="90 day plan roadmap hub fast cash freelance assets">
+        <a class="card-thumb g-slate" href="posts/complete-guide-earning-online.html" aria-hidden="true"><span>🧭</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-blue">Start Here</span><span>Nov 11, 2026 · 18 min</span></div>
+          <h3><a href="posts/complete-guide-earning-online.html">The Complete Guide to Earning Money Online in 2026</a></h3>
+          <p class="excerpt">Every realistic path, organized by how fast it pays — with a 90-day plan. The hub the whole site hangs from.</p>
+          <a class="read-more" href="posts/complete-guide-earning-online.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="side-hustles" data-title="10 side hustles start today with zero dollars freelance reselling tutoring" data-tags="freelance fiverr upwork reselling print on demand">
+        <a class="card-thumb g-emerald" href="posts/side-hustles-zero-investment.html" aria-hidden="true"><span>🚀</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-emerald">Side Hustles</span><span>Nov 9, 2026 · 9 min</span></div>
+          <h3><a href="posts/side-hustles-zero-investment.html">10 Side Hustles You Can Start Today With $0</a></h3>
+          <p class="excerpt">Ten genuinely zero-cost hustles, what each realistically pays, and how to land your first client this week.</p>
+          <a class="read-more" href="posts/side-hustles-zero-investment.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="blogging" data-title="how to start a blog for free and actually monetize it adsense affiliate" data-tags="wordpress blogger github pages medium substack seo">
+        <a class="card-thumb g-violet" href="posts/start-blog-free.html" aria-hidden="true"><span>✍️</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-violet">Blogging</span><span>Nov 6, 2026 · 11 min</span></div>
+          <h3><a href="posts/start-blog-free.html">How to Start a Blog for Free in 2026 (and Actually Monetize It)</a></h3>
+          <p class="excerpt">Platform trade-offs, a content plan that gets traffic, and the realistic 6–12 month path to your first payout.</p>
+          <a class="read-more" href="posts/start-blog-free.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="make-money" data-title="15 legit ways to make money online from home scams red flags" data-tags="remote work user testing transcription data annotation">
+        <a class="card-thumb g-blue" href="posts/make-money-online-legit.html" aria-hidden="true"><span>💻</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-blue">Make Money Online</span><span>Nov 3, 2026 · 10 min</span></div>
+          <h3><a href="posts/make-money-online-legit.html">15 Legit Ways to Make Money Online From Home</a></h3>
+          <p class="excerpt">Vetted options only — plus the red flags that expose work-from-home scams before you waste a minute.</p>
+          <a class="read-more" href="posts/make-money-online-legit.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="monetization" data-title="highest paying adsense niches 2026 rpm finance insurance legal" data-tags="rpm cpc niche research ymyl">
+        <a class="card-thumb g-amber" href="posts/highest-paying-adsense-niches.html" aria-hidden="true"><span>💰</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-amber">Monetization</span><span>Oct 30, 2026 · 7 min</span></div>
+          <h3><a href="posts/highest-paying-adsense-niches.html">The Highest-Paying AdSense Niches in 2026</a></h3>
+          <p class="excerpt">Why finance and insurance ads pay 10× more than entertainment — and how to pick a niche you can actually write 100 posts about.</p>
+          <a class="read-more" href="posts/highest-paying-adsense-niches.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="tools" data-title="25 free tools every online earner should know canva notion capcut search console" data-tags="canva figma notion wave gumroad free software">
+        <a class="card-thumb g-rose" href="posts/free-tools-online-earners.html" aria-hidden="true"><span>🧰</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-rose">Tools &amp; Apps</span><span>Oct 27, 2026 · 8 min</span></div>
+          <h3><a href="posts/free-tools-online-earners.html">25 Free Tools Every Online Earner Should Know</a></h3>
+          <p class="excerpt">The entire toolkit — design, SEO, video, invoicing, hosting — without spending a cent on software.</p>
+          <a class="read-more" href="posts/free-tools-online-earners.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="monetization" data-title="adsense approval checklist get approved first try requirements" data-tags="adsense approval privacy policy required pages review">
+        <a class="card-thumb g-emerald" href="posts/adsense-approval-checklist.html" aria-hidden="true"><span>✅</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-emerald">Monetization</span><span>Oct 24, 2026 · 6 min</span></div>
+          <h3><a href="posts/adsense-approval-checklist.html">AdSense Approval Checklist: Get Approved on Your First Try</a></h3>
+          <p class="excerpt">The exact requirements Google reviews, the pages this site already has, and the mistakes that cause most rejections.</p>
+          <a class="read-more" href="posts/adsense-approval-checklist.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="side-hustles" data-title="land first freelance client in 7 days zero experience proposals portfolio" data-tags="upwork fiverr proposals spec work outreach">
+        <a class="card-thumb g-blue" href="posts/freelance-first-client-7-days.html" aria-hidden="true"><span>🎯</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-emerald">Side Hustles</span><span>Oct 21, 2026 · 8 min</span></div>
+          <h3><a href="posts/freelance-first-client-7-days.html">Land Your First Freelance Client in 7 Days (Zero Experience)</a></h3>
+          <p class="excerpt">A day-by-day plan with proposal templates that break the no-experience loop — first client in one week.</p>
+          <a class="read-more" href="posts/freelance-first-client-7-days.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="make-money" data-title="make your first 100 dollars online this month realistic plan fast money" data-tags="reselling user testing surveys gig economy">
+        <a class="card-thumb g-amber" href="posts/first-100-online.html" aria-hidden="true"><span>💯</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-blue">Make Money Online</span><span>Oct 18, 2026 · 6 min</span></div>
+          <h3><a href="posts/first-100-online.html">Make Your First $100 Online This Month (Realistic Plan)</a></h3>
+          <p class="excerpt">The beginner stack that actually pays — a 4-week schedule built from three parallel free methods.</p>
+          <a class="read-more" href="posts/first-100-online.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="monetization" data-title="adsense rpm explained earnings per 1000 visitors real numbers" data-tags="rpm cpc revenue per mille traffic value">
+        <a class="card-thumb g-slate" href="posts/adsense-rpm-explained.html" aria-hidden="true"><span>📊</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-amber">Monetization</span><span>Oct 15, 2026 · 7 min</span></div>
+          <h3><a href="posts/adsense-rpm-explained.html">AdSense RPM Explained: Real Earnings Per 1,000 Visitors</a></h3>
+          <p class="excerpt">Realistic RPM ranges by niche, the math you can use to predict earnings, and the 5 factors that move it.</p>
+          <a class="read-more" href="posts/adsense-rpm-explained.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="monetization" data-title="affiliate marketing with zero dollars beginners guide free programs disclosure" data-tags="amazon associates recurring commissions saas disclosure ftc">
+        <a class="card-thumb g-violet" href="posts/affiliate-marketing-beginners.html" aria-hidden="true"><span>🔗</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-amber">Monetization</span><span>Oct 12, 2026 · 10 min</span></div>
+          <h3><a href="posts/affiliate-marketing-beginners.html">Affiliate Marketing With $0: Beginner's Guide for 2026</a></h3>
+          <p class="excerpt">No approval wall, no startup cost — how the commission models work, what to join first, and the mistakes that get beginners banned.</p>
+          <a class="read-more" href="posts/affiliate-marketing-beginners.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="side-hustles" data-title="side hustles for students no skills flexible campus tutoring notes" data-tags="students tutoring textbooks campus ambassador">
+        <a class="card-thumb g-rose" href="posts/side-hustles-students.html" aria-hidden="true"><span>🎓</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-emerald">Side Hustles</span><span>Oct 9, 2026 · 6 min</span></div>
+          <h3><a href="posts/side-hustles-students.html">8 Side Hustles for Students (No Skills, No Money)</a></h3>
+          <p class="excerpt">Flexible, zero-cost hustles that fit around lectures — with realistic pay and the 70/30 grades rule.</p>
+          <a class="read-more" href="posts/side-hustles-students.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="make-money" data-title="12 websites that pay you to write get paid writing online" data-tags="upwork fiverr problogger medium listverse content agencies">
+        <a class="card-thumb g-emerald" href="posts/websites-that-pay-you-to-write.html" aria-hidden="true"><span>✍️</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-blue">Make Money Online</span><span>Oct 6, 2026 · 9 min</span></div>
+          <h3><a href="posts/websites-that-pay-you-to-write.html">12 Websites That Pay You to Write in 2026</a></h3>
+          <p class="excerpt">Marketplaces, agencies, revenue-share and list sites — realistic rates for each, plus how to qualify with zero clips.</p>
+          <a class="read-more" href="posts/websites-that-pay-you-to-write.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="side-hustles" data-title="get paid to test websites complete beginner guide user testing panels" data-tags="usertesting userlytics paypal screeners narration">
+        <a class="card-thumb g-blue" href="posts/get-paid-to-test-websites.html" aria-hidden="true"><span>🖱️</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-emerald">Side Hustles</span><span>Oct 3, 2026 · 7 min</span></div>
+          <h3><a href="posts/get-paid-to-test-websites.html">Get Paid to Test Websites: The Complete Beginner Guide</a></h3>
+          <p class="excerpt">How a session runs, the panels to join, and the honest $50–200/month earnings picture.</p>
+          <a class="read-more" href="posts/get-paid-to-test-websites.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="side-hustles" data-title="upwork vs fiverr for beginners which platform first fees proposals" data-tags="freelance platforms proposals gigs fees">
+        <a class="card-thumb g-violet" href="posts/upwork-vs-fiverr.html" aria-hidden="true"><span>💼</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-emerald">Side Hustles</span><span>Sep 30, 2026 · 8 min</span></div>
+          <h3><a href="posts/upwork-vs-fiverr.html">Upwork vs Fiverr for Beginners: Which First?</a></h3>
+          <p class="excerpt">First-job speed, fee math, beginner mistakes — and the sequence that actually works.</p>
+          <a class="read-more" href="posts/upwork-vs-fiverr.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="make-money" data-title="making money with ai in 2026 honest ways services chatbot prompt packs" data-tags="ai services chatbot setup prompt packs faceless">
+        <a class="card-thumb g-emerald" href="posts/make-money-with-ai.html" aria-hidden="true"><span>🤖</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-blue">Make Money Online</span><span>Sep 26, 2026 · 9 min</span></div>
+          <h3><a href="posts/make-money-with-ai.html">Making Money With AI in 2026: 9 Honest Ways</a></h3>
+          <p class="excerpt">AI-wrapped services, products and channels that survive — and why raw AI content earns nothing.</p>
+          <a class="read-more" href="posts/make-money-with-ai.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="monetization" data-title="how much traffic do you need to earn 100 month from adsense sessions rpm" data-tags="traffic math rpm sessions affiliate stack">
+        <a class="card-thumb g-rose" href="posts/how-much-traffic-for-100-month.html" aria-hidden="true"><span>🚦</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-amber">Monetization</span><span>Sep 22, 2026 · 6 min</span></div>
+          <h3><a href="posts/how-much-traffic-for-100-month.html">How Much Traffic for $100/Month From AdSense?</a></h3>
+          <p class="excerpt">The exact math at every RPM — and how to hit the target with half the traffic.</p>
+          <a class="read-more" href="posts/how-much-traffic-for-100-month.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="monetization" data-title="adsense vs ezoic vs medianet best ad network for beginners upgrade path" data-tags="ad networks rpm premium mediavine monumetric">
+        <a class="card-thumb g-amber" href="posts/adsense-vs-ezoic-vs-medianet.html" aria-hidden="true"><span>🥊</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-amber">Monetization</span><span>Sep 18, 2026 · 8 min</span></div>
+          <h3><a href="posts/adsense-vs-ezoic-vs-medianet.html">AdSense vs Ezoic vs Media.net for Beginners</a></h3>
+          <p class="excerpt">Approval difficulty, RPM potential, and the month-by-month network upgrade path.</p>
+          <a class="read-more" href="posts/adsense-vs-ezoic-vs-medianet.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="make-money" data-title="sell digital products on gumroad no audience needed templates pricing" data-tags="templates notion spreadsheets validation pinterest">
+        <a class="card-thumb g-violet" href="posts/sell-digital-products-gumroad.html" aria-hidden="true"><span>📦</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-blue">Make Money Online</span><span>Sep 14, 2026 · 8 min</span></div>
+          <h3><a href="posts/sell-digital-products-gumroad.html">Sell Digital Products on Gumroad (No Audience Needed)</a></h3>
+          <p class="excerpt">What sells, validation before polish, pricing psychology, and the first 10 sales without followers.</p>
+          <a class="read-more" href="posts/sell-digital-products-gumroad.html">Read guide →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="make-money" data-title="passive income the honest guide what actually works with zero dollars" data-tags="digital products seo youtube stock pod hype">
+        <a class="card-thumb g-slate" href="posts/passive-income-honest-guide.html" aria-hidden="true"><span>🛋️</span></a>
+        <div class="card-body">
+          <div class="card-meta"><span class="badge b-blue">Make Money Online</span><span>Sep 10, 2026 · 9 min</span></div>
+          <h3><a href="posts/passive-income-honest-guide.html">Passive Income: The Honest Guide (What Works With $0)</a></h3>
+          <p class="excerpt">What genuinely pays, what's front-loaded work in disguise, and what's hype — with side-by-side timelines.</p>
+          <a class="read-more" href="posts/passive-income-honest-guide.html">Read guide →</a>
+        </div>
+      </article>
+    </div>
+
+    <p id="no-results" class="hidden">😕 No guides match that search. Try a broader term like “money” or “blog”.</p>
+
+    <!-- ═══ ADSENSE SLOT: replace with an ad unit (e.g. responsive display ad) ═══ -->
+    <aside class="ad-slot ad-leaderboard" aria-label="Advertisement">
+      <span>📢 Ad space — paste your AdSense ad unit here (README.md → “Add AdSense ads”)</span>
+    </aside>
+  </section>
+
+  <!-- ── Newsletter ───────────────────────────────────────── -->
+  <section class="container newsletter" id="newsletter">
+    <div class="newsletter-inner">
+      <div>
+        <h2>Get new money guides weekly</h2>
+        <p>One practical email every Thursday. Free forever, unsubscribe anytime.</p>
+      </div>
+      <div>
+        <form class="newsletter-form" data-fake-submit>
+          <input type="email" name="email" placeholder="you@email.com" required aria-label="Email address">
+          <button class="btn" type="submit">Subscribe</button>
+        </form>
+        <p class="form-success hidden" data-success>✅ You're in! Check your inbox on Thursday. (Connect this form to Formspree — see README)</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <a href="index.html" class="logo"><span class="logo-coin">💵</span> ZeroToEarn</a>
+      <p>Honest, practical guides to earning online without spending money upfront. Every strategy we cover can be started for $0.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html#articles">All articles</a></li>
+        <li><a href="posts/side-hustles-zero-investment.html">Side hustles</a></li>
+        <li><a href="posts/start-blog-free.html">Start a blog</a></li>
+        <li><a href="posts/adsense-approval-checklist.html">AdSense guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span data-year>2026</span> ZeroToEarn. All rights reserved.</span>
+    <span>Affiliate disclosure: some links may earn us a commission at no cost to you.</span>
+  </div>
+</footer>
+
+<button class="to-top" id="to-top" aria-label="Back to top">↑</button>
+
+<div class="cookie-banner" id="cookie-banner" hidden>
+  <p>🍪 We use cookies for analytics and to show ads that keep this site free. <a href="privacy-policy.html">Learn more</a></p>
+  <div class="actions">
+    <button class="btn btn-ghost" id="cookie-decline">Essential only</button>
+    <button class="btn" id="cookie-accept">Accept all</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
